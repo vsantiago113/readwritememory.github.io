@@ -1,0 +1,344 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to ReadWriteMemory’s documentation! &mdash; ReadWriteMemory 0.1.4 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> ReadWriteMemory
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Welcome to ReadWriteMemory’s documentation!</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">ReadWriteMemory</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Welcome to ReadWriteMemory’s documentation!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="welcome-to-readwritememory-s-documentation">
+<h1>Welcome to ReadWriteMemory’s documentation!<a class="headerlink" href="#welcome-to-readwritememory-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<span class="target" id="module-ReadWriteMemory"></span><dl class="py class">
+<dt id="ReadWriteMemory.Process">
+<em class="property">class </em><code class="sig-prename descclassname">ReadWriteMemory.</code><code class="sig-name descname">Process</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">''</span></em>, <em class="sig-param"><span class="n">pid</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">- 1</span></em>, <em class="sig-param"><span class="n">handle</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">- 1</span></em>, <em class="sig-param"><span class="n">error_code</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ReadWriteMemory.Process" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Process class holds the information about the requested process.</p>
+<dl class="py method">
+<dt id="ReadWriteMemory.Process.close">
+<code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#ReadWriteMemory.Process.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closes the handle of the process.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The last error code from the result after an attempt to close the handle.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ReadWriteMemory.Process.get_last_error">
+<em class="property">static </em><code class="sig-name descname">get_last_error</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#ReadWriteMemory.Process.get_last_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the last error code.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The last error code.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ReadWriteMemory.Process.get_pointer">
+<code class="sig-name descname">get_pointer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lp_base_address</span><span class="p">:</span> <span class="n">hex</span></em>, <em class="sig-param"><span class="n">offsets</span><span class="p">:</span> <span class="n">List<span class="p">[</span>hex<span class="p">]</span></span> <span class="o">=</span> <span class="default_value"></span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#ReadWriteMemory.Process.get_pointer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the pointer of a given address.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lp_base_address</strong> – The address from where you want to get the pointer.</p></li>
+<li><p><strong>offsets</strong> – a list of offets.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The pointer of a give address.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ReadWriteMemory.Process.open">
+<code class="sig-name descname">open</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ReadWriteMemory.Process.open" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open the process with the Query, Operation, Read and Write permissions and return the process handle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>True if the handle exists if not return False</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ReadWriteMemory.Process.read">
+<code class="sig-name descname">read</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lp_base_address</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; Any<a class="headerlink" href="#ReadWriteMemory.Process.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read data from the process’s memory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>lp_base_address</strong> – The process’s pointer</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The data from the process’s memory if succeed if not raises an exception.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ReadWriteMemory.Process.write">
+<code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lp_base_address</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#ReadWriteMemory.Process.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write data to the process’s memory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lp_base_address</strong> – The process’ pointer.</p></li>
+<li><p><strong>value</strong> – The data to be written to the process’s memory</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>It returns True if succeed if not it raises an exception.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="ReadWriteMemory.ReadWriteMemory">
+<em class="property">class </em><code class="sig-prename descclassname">ReadWriteMemory.</code><code class="sig-name descname">ReadWriteMemory</code><a class="headerlink" href="#ReadWriteMemory.ReadWriteMemory" title="Permalink to this definition">¶</a></dt>
+<dd><p>The ReadWriteMemory Class is used to read and write to the memory of a running process.</p>
+<dl class="py method">
+<dt id="ReadWriteMemory.ReadWriteMemory.enumerate_processes">
+<em class="property">static </em><code class="sig-name descname">enumerate_processes</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; list<a class="headerlink" href="#ReadWriteMemory.ReadWriteMemory.enumerate_processes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the list of running processes ID’s from the current system.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A list of processes ID’s</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ReadWriteMemory.ReadWriteMemory.get_process_by_id">
+<code class="sig-name descname">get_process_by_id</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">process_id</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#ReadWriteMemory.Process" title="ReadWriteMemory.Process">ReadWriteMemory.Process</a><a class="headerlink" href="#ReadWriteMemory.ReadWriteMemory.get_process_by_id" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Description</dt>
+<dd class="field-odd"><p>Get the process by the process ID and return a Process object.</p>
+</dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><p><strong>process_id</strong> – The process ID.</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A Process object containing the information from the requested Process.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ReadWriteMemory.ReadWriteMemory.get_process_by_name">
+<code class="sig-name descname">get_process_by_name</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">process_name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#ReadWriteMemory.Process" title="ReadWriteMemory.Process">ReadWriteMemory.Process</a><a class="headerlink" href="#ReadWriteMemory.ReadWriteMemory.get_process_by_name" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Description</dt>
+<dd class="field-odd"><p>Get the process by the process executabe’s name and return a Process object.</p>
+</dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><p><strong>process_name</strong> – The name of the executable file for the specified process for example, my_program.exe.</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A Process object containing the information from the requested Process.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt id="ReadWriteMemory.ReadWriteMemoryError">
+<em class="property">exception </em><code class="sig-prename descclassname">ReadWriteMemory.</code><code class="sig-name descname">ReadWriteMemoryError</code><a class="headerlink" href="#ReadWriteMemory.ReadWriteMemoryError" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Victor Santiago
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
